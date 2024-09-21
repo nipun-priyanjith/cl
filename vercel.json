@@ -15,6 +15,10 @@
     {
       "src": "/api/(.*)",
       "dest": "https://nipun-priyanjith-il95f5x4w-nipuns-projects-a980ca2d.vercel.app/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
