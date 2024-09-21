@@ -1,3 +1,4 @@
+vercel.json    
 {
   "version": 2,
   "builds": [
@@ -5,40 +6,18 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "build"  
+        "distDir": "build"
       }
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "https://nipun-priyanjith-il95f5x4w-nipuns-projects-a980ca2d.vercel.app/api/$1"  
+      "dest": "https://nipun-priyanjith-il95f5x4w-nipuns-projects-a980ca2d.vercel.app/api/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "/index.html"  
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",  
-      "destination": "/index.html"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*).js",  
-      "headers": [
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        }
-      ]
-    }
-  ],
-  "cors": {
-    "origin": ["https://nipun-priyanjith-portfolio.vercel.app"],  
-    "methods": ["GET", "POST", "OPTIONS"],
-    "credentials": true
-  }
+      "dest": "/index.html"
+    },
+  ]
 }
