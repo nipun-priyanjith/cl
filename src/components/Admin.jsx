@@ -11,7 +11,7 @@ import Port from './Port';
 
 const Admin = () => {
 
-  const { user, handleSignOut } = useAuth();
+  const {  handleSignOut } = useAuth();
   const navigate = useNavigate();
 
   
