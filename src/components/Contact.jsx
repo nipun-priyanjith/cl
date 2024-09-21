@@ -1,7 +1,7 @@
 import React from 'react';
 import { CONTACT } from '../constants';
 import { motion } from 'framer-motion';
-import { FaGithub, FaYoutube, FaReddit, FaLinkedin, FaPhoneAlt } from 'react-icons/fa';
+import { FaGithub, FaYoutube, FaReddit, FaLinkedin } from 'react-icons/fa';
 
 function Contact() {
   return (
@@ -27,15 +27,7 @@ function Contact() {
           {CONTACT.address}
         </motion.p>
 
-        {/* <motion.p 
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 1 }}
-          className="my-4 text-lg font-mono"
-          style={{ color: '#fffce1' }}
-        >
-          <FaPhoneAlt className="inline-block mr-2" /> {CONTACT.phoneNo}
-        </motion.p> */}
+
 
         <motion.a 
           whileInView={{ opacity: 1, scale: 1 }}

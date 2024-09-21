@@ -12,7 +12,7 @@ import Port from './Port';
 const Admin = () => {
   // const [words, setWords] = useState([]);
   // const [newWord, setNewWord] = useState('');
-  const [error, setError] = useState('');
+  // const [error, setError] = useState('');
   const { user, handleSignOut } = useAuth();
   const navigate = useNavigate();
 

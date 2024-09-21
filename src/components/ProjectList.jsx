@@ -63,7 +63,7 @@ const ProjectList = () => {
                       <img
                         key={index}
                         src={`data:${image.contentType};base64,${image.data}`}
-                        alt={`Project image ${index}`}
+                        alt="Product image"
                         className="w-24 h-24 object-cover rounded-md shadow-lg"
                       />
                     ))}
