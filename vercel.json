@@ -5,18 +5,40 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "build"
+        "distDir": "build"  // Output folder for build files
       }
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "https://nipun-priyanjith-pf.vercel.app/api/$1"
+      "dest": "https://nipun-priyanjith-il95f5x4w-nipuns-projects-a980ca2d.vercel.app/api/$1"  // Proxy to your API server
     },
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/index.html"  // Catch-all route for React Router (client-side routing)
     }
-  ]
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",  // Rewrites all paths to `index.html` for client-side routing
+      "destination": "/App.js"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*).js",  // Set proper CORS headers for your static JS files
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    }
+  ],
+  "cors": {
+    "origin": ["https://nipun-priyanjith-portfolio.vercel.app"],  // Add your deployed client domain
+    "methods": ["GET", "POST", "OPTIONS"],
+    "credentials": true
+  }
 }
