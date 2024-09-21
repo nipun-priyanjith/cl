@@ -13,7 +13,7 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { SiMysql } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 
-import { animate, motion } from 'framer-motion';
+import {  motion } from 'framer-motion';
 
 const iconVariants =(duration)=>({
   initial:{y:-10},

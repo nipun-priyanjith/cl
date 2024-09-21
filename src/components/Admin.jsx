@@ -3,16 +3,14 @@
 
 
 
-import React, { useState, useEffect } from 'react';
-import { fetchWords, createWord } from '../services/api';
+import React from 'react';
+
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import Port from './Port';
 
 const Admin = () => {
-  // const [words, setWords] = useState([]);
-  // const [newWord, setNewWord] = useState('');
-  // const [error, setError] = useState('');
+
   const { user, handleSignOut } = useAuth();
   const navigate = useNavigate();
 
@@ -44,12 +42,7 @@ const Admin = () => {
             >
               My YouTube Video List
             </button>
-            {/* <button
-              onClick={() => navigate('/newp')}
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-            >
-              Go to Project Form
-            </button> */}
+
             <button
               onClick={() => navigate('/p')}
               className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded"
