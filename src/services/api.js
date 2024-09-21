@@ -1,7 +1,7 @@
 // client/src/services/api.js
 
-// const API_URL = 'https://nipun-priyanjith-il95f5x4w-nipuns-projects-a980ca2d.vercel.app/api';// Ensure /api prefix matches your server routes
-const API_URL = 'https://nipun-priyanjith-pf.vercel.app/api/';
+ const API_URL = 'https://nipun-priyanjith-il95f5x4w-nipuns-projects-a980ca2d.vercel.app/api';// Ensure /api prefix matches your server routes
+
 
 
 
