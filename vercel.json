@@ -1,5 +1,3 @@
-
-
 {
   "version": 2,
   "builds": [
@@ -14,7 +12,15 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "https://nipun-priyanjith-pf.vercel.app/api/$1"
+      "dest": "https://nipun-priyanjith-il95f5x4w-nipuns-projects-a980ca2d.vercel.app/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/App.js",
+      "dest": "/index.html"
     }
   ]
 }
