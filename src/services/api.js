@@ -25,25 +25,11 @@ export const createExperience = async (experience) => {
   }
 };
 
-// export const fetchExperiences = async () => {
-//   try {
-//     const response = await fetch(`${API_URL}experiences`);
-//     if (!response.ok) {
-//       throw new Error('Network response was not ok');
-//     }
-//     return await response.json();
-//   } catch (error) {
-//     console.error('Fetch experiences error:', error);
-//     throw error;
-//   }
-// };
-// Fetch Experiences
 export const fetchExperiences = async () => {
   try {
-    const response = await fetch(`${API_URL}/experiences`); // Added missing slash before "experiences"
+    const response = await fetch(`nipun-priyanjith-eiic5ik9c-nipuns-projects-a980ca2d.vercel.app/experiences`);
     if (!response.ok) {
-      const errorText = await response.text(); // Get the text response for debugging
-      throw new Error(`Network response was not ok: ${response.statusText} - ${errorText}`);
+      throw new Error('Network response was not ok');
     }
     return await response.json();
   } catch (error) {
@@ -51,6 +37,7 @@ export const fetchExperiences = async () => {
     throw error;
   }
 };
+Fetch Experiences
 
 
 
