@@ -4,12 +4,12 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Login from './components/Login';
 import SignUp from './components/SignUp';
 import Admin from './components/Admin';
-import Frontend from './components/Frontend';
+
 import './App.css';
 import { useAuth } from './context/AuthContext';
 import Port from './components/Port';
 import AdminExperience from './components/AdminExperience';
-import AdminProject from './components/AdminProject';
+
 import ExperienceList from './components/ExperienceList';
 import ProjectForm from './components/ProjectForm';
 import ProjectList from './components/ProjectList';

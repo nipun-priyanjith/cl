@@ -44,7 +44,7 @@ function Experience() {
        initial={{opacity:0,y:-100}}
        transition={{duration:1}}
              className="w-full lg:w-1/2">
-              <div><iframe width="400" height="250" src={exp.link} style={{borderColor: '#FF0000', borderWidth: '2px', borderStyle: 'solid'}}>
+              <div><iframe width="400" height="250" title={exp._id} src={exp.link} style={{borderColor: '#FF0000', borderWidth: '2px', borderStyle: 'solid'}}>
               </iframe></div>
             </motion.div>
             <motion.div 

@@ -1,72 +1,3 @@
-// // client/src/components/Admin.jsx
-// import React, { useState, useEffect } from 'react';
-// import { fetchWords, createWord } from '../services/api';
-// import{useAuth} from '../context/AuthContext';
-
-// const Admin = () => {
-//   const [words, setWords] = useState([]);
-//   const [newWord, setNewWord] = useState('');
-//   const [error, setError] = useState('');
-//   const { user, handleSignOut } = useAuth();
-
-//   useEffect(() => {
-//     const getWords = async () => {
-//       try {
-//         const wordsData = await fetchWords();
-//         setWords(wordsData);
-//       } catch (error) {
-//         setError('Failed to fetch words.');
-//       }
-//     };
-
-//     getWords();
-//   }, []);
-
-//   const handleAddWord = async () => {
-//     try {
-//       if (newWord.trim() === '') {
-//         setError('Word cannot be empty.');
-//         return;
-//       }
-//       await createWord({ text: newWord });
-//       setNewWord('');
-//       const wordsData = await fetchWords();
-//       setWords(wordsData);
-//       setError('');
-//     } catch (error) {
-//       setError('Failed to add word.');
-//     }
-//   };
-
-//   return (
-//     <div>
-//       <h2>Admin Panel</h2>
-//       <input
-//         type="text"
-//         value={newWord}
-//         onChange={(e) => setNewWord(e.target.value)}
-//         placeholder="Enter new word"
-//       />
-//       <button onClick={handleAddWord}>Add Word</button>
-//       {error && <p style={{ color: 'red' }}>{error}</p>}
-//       <ul>
-//         {words.length > 0 ? (
-//           words.map((word) => (
-//             <li key={word._id}>{word.text}</li>
-//           ))
-//         ) : (
-//           <p>No words available.</p>
-//         )}
-//       </ul>
-//       <br/><br/><br/><br/><br/><br/><br/><br/>
-//       <h1>Welcome, {user?.email}</h1>
-//       <button onClick={handleSignOut}>Sign Out</button>
-//     </div>
-//   );
-// };
-
-// export default Admin;
-
 
 
 
@@ -85,35 +16,7 @@ const Admin = () => {
   const { user, handleSignOut } = useAuth();
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   const getWords = async () => {
-  //     try {
-  //       const wordsData = await fetchWords();
-  //       setWords(wordsData);
-  //     } catch (error) {
-  //       setError('Failed to fetch words.');
-  //     }
-  //   };
-
-  //   getWords();
-  // }, []);
-
-  // const handleAddWord = async () => {
-  //   try {
-  //     if (newWord.trim() === '') {
-  //       setError('Word cannot be empty.');
-  //       return;
-  //     }
-  //     await createWord({ text: newWord });
-  //     setNewWord('');
-  //     const wordsData = await fetchWords();
-  //     setWords(wordsData);
-  //     setError('');
-  //   } catch (error) {
-  //     setError('Failed to add word.');
-  //   }
-  // };
-
+  
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Navbar */}
@@ -166,38 +69,7 @@ const Admin = () => {
       {/* Content */}
       <div className="flex flex-col items-center p-4">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">Admin Panel</h2>
-{/* 
-        <div className="w-full max-w-xl">
-          <input
-            type="text"
-            value={newWord}
-            onChange={(e) => setNewWord(e.target.value)}
-            placeholder="Enter new word"
-            className="border border-gray-300 rounded-lg px-4 py-2 mb-4 w-full"
-          />
-          <button
-            onClick={handleAddWord}
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"
-          >
-            Add Word
-          </button>
 
-          {error && <p className="text-red-500 mt-2">{error}</p>}
-        </div>
-
-        <div className="mt-6 w-full max-w-2xl">
-          <ul className="bg-white shadow-md rounded-lg p-4">
-            {words.length > 0 ? (
-              words.map((word) => (
-                <li key={word._id} className="border-b py-2">
-                  {word.text}
-                </li>
-              ))
-            ) : (
-              <p className="text-gray-500">No words available.</p>
-            )}
-          </ul>
-        </div> */}
 
         <Port/>
       </div>
