@@ -49,7 +49,7 @@ function App() {
         <Route path='/expi'  element={!user ? <Navigate to="/login" /> :<ExperienceList/>}/>
        
         <Route path='/p'  element={!user ? <Navigate to="/login" /> :<ProjectList/>}/>
-      
+        <Route path="*" element={<Port />} />
       </Routes>
     </Router>
   );
