@@ -1,3 +1,6 @@
+
+
+
 {
   "version": 2,
   "builds": [
@@ -9,16 +12,5 @@
       }
     }
   ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "https://nipun-priyanjith-il95f5x4w-nipuns-projects-a980ca2d.vercel.app/api/$1"
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
-}
+  
+  "rewrites":[{"source":"/(.*)","destination":"/"}]}
