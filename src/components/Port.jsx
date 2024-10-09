@@ -12,8 +12,8 @@ import Contact from'./Contact'
 const Port = () => {
   return (
 
-    <div className='bg-darkGray'>
-    <div className='container mx-auto px-8'>
+    <div className='bg-darkGray overflow-x-hidden'> 
+      <div className='container mx-auto px-8'>
       <Navbar/>        
       <Hero/>
       <section id="about">  
