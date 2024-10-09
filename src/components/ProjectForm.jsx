@@ -50,7 +50,7 @@ class ProjectForm extends Component {
     }
 
     // API call to upload files and form data
-    axios.post('http://localhost:5000/api/projects/uploadfiles', formData)
+    axios.post('https://nipun-priyanjith-pf.vercel.app/api/projects/uploadfiles', formData)
       .then(response => {
         toast.success('Files uploaded successfully!', {
           position: "top-right",
