@@ -27,7 +27,7 @@ export const createExperience = async (experience) => {
 
 export const fetchExperiences = async () => {
   try {
-    const response = await fetch(`nipun-priyanjith-eiic5ik9c-nipuns-projects-a980ca2d.vercel.app/experiences`);
+    const response = await fetch(`https://nipun-priyanjith-pf.vercel.app/api/experiences`);
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
