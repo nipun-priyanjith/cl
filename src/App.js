@@ -23,7 +23,7 @@ function App() {
 
   return (
     <Router>
-            {/* Add ToastContainer globally so it's accessible from anywhere */}
+            
             <ToastContainer
         position="top-right"
         autoClose={3000}
@@ -38,7 +38,7 @@ function App() {
       />
       <Routes>
         <Route path="/" element={<Port/>} />
-        {/* <Route path='/abc' element={!user ? <Navigate to="/login" /> :<Frontend />}/> */}
+       
 
         <Route path="/login" element={user ? <Navigate to="/admin" /> : <Login />} />
         <Route path="/signup" element={user ? <Navigate to="/admin" /> : <SignUp />} />
@@ -47,9 +47,9 @@ function App() {
         <Route path='/newproject' element={!user ? <Navigate to="/login" /> : <ProjectForm/>}/>
         <Route path='/newexpi' element={!user ? <Navigate to="/login" /> : <AdminExperience/>}/>
         <Route path='/expi'  element={!user ? <Navigate to="/login" /> :<ExperienceList/>}/>
-        {/* <Route path='/newp'  element={!user ? <Navigate to="/login" /> :<ProjectForm/>}/> */}
+       
         <Route path='/p'  element={!user ? <Navigate to="/login" /> :<ProjectList/>}/>
-        // <Route path="*" element={<Port />} />
+      
       </Routes>
     </Router>
   );
