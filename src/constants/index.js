@@ -1,6 +1,6 @@
 
 
-export const HERO_CONTENT = `Dynamic and skilled Software Engineering student in the 2nd year of BSc (Hons) Computing at NIBM, seeking a software engineering internship to gain real-world experience. With foundational knowledge in cloud technologies such as AWS and Firebase, I am eager to contribute to innovative projects and gain hands-on experience in a collaborative team. `;
+export const HERO_CONTENT = `Motivated and skilled Software Engineering student pursuing a BSc (Hons) in Computing at NIBM, seeking a software engineering internship to gain practical experience. With a solid foundation in cloud technologies like AWS and Firebase, I am enthusiastic about contributing to innovative projects and developing hands-on skills in a collaborative team environment. `;
 
 export const ABOUT_TEXT = `I'm an undergraduate software engineering student who enjoys breaking down complex problems into smaller parts and solving them effectively. I aim to leverage robust programming skills and continuous learning to contribute to software development, collaborate effectively with experienced engineers, and ensure team success in meeting project deadlines.`;
 
