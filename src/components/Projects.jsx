@@ -27,9 +27,39 @@ function Projects() {
     getProjects();
   }, []);
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
+  //if (loading) return <p>Loading...</p>;
+  //if (error) return <p>Error: {error}</p>;
+if (loading) {
+  return (
+    <p 
+      style={{
+        color: '#fffce1',
+        fontSize: '1.5rem', // Adjust size as needed
+        textAlign: 'center',
+        marginTop: '20px'
+      }}
+    >
+      Loading...
+    </p>
+  );
+}
 
+if (error) {
+  return (
+    <p 
+      style={{
+        color: '#fffce1',
+        fontSize: '1.5rem', // Adjust size as needed
+        textAlign: 'center',
+        marginTop: '20px'
+      }}
+    >
+      Error: {error}
+    </p>
+  );
+}
+
+  
   return (
     <div className="border-b border-neutral-900 pb-4">
       <motion.h1 
