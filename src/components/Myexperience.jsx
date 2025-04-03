@@ -18,7 +18,8 @@ const Myexperience = () => {
     {
       date: "October 2022 - Present",
       title: "NIBM Academic Project",
-      imageUrl: "https://findit-resources.s3.us-east-2.amazonaws.com/account/profilePictures/1628842127359.jpg",      
+      imageUrl: "https://findit-resources.s3.us-east-2.amazonaws.com/account/profilePictures/1628842127359.jpg",
+      details: [],
     },
   ];
 
