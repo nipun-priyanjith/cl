@@ -23,7 +23,7 @@ const Myexperience = () => {
     {
       date: "October 2022 - Present",
       title: "NIBM Academic Project",
-      imageUrl: "https://3.bp.blogspot.com/_-jZuzvL9Tm8/TRL_JvWaj5I/AAAAAAAAAAw/2wLHpNe6yJU/s1600/xkq4c3.png", // Image URL here
+      imageUrl: "https://findit-resources.s3.us-east-2.amazonaws.com/account/profilePictures/1628842127359.jpg", // Image URL here
       details: [
         "ML project",
       ],
@@ -31,19 +31,14 @@ const Myexperience = () => {
   ];
 
   return (
-    <div className="p-6 bg-darkGray min-h-screen text-[#fffce1]">
+    <div className="p-6 bg-darkGray min-h-screen text-[#fffce1] font-mono">
       <h1 className="text-3xl font-bold text-center mb-6">My Experience</h1>
       <div className="relative max-w-3xl mx-auto">
-        <div className="absolute left-1/2 top-0 w-px h-full bg-[#9CFF00]"></div>
         {experiences.map((exp, index) => (
           <div
             key={index}
             className="mb-6 p-4 bg-darkGray rounded-lg shadow-md relative z-10"
           >
-            <div className="flex items-center justify-start mb-2">
-              <div className="w-4 h-4 rounded-full bg-[#40A4FF]"></div>
-              <div className="flex-1 border-t-2 border-[#40A4FF] h-1"></div>
-            </div>
             <h2 className="text-xl font-semibold text-[#40A4FF]">{exp.date}</h2>
             <h3 className="text-lg font-medium text-[#9CFF00] flex items-center">
               <img src={exp.imageUrl} alt={exp.title} className="w-8 h-8 rounded-full mr-3" />
