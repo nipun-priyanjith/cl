@@ -7,7 +7,7 @@ import Technologies from './Technologies'
 import Experience from './Youtube'
 import Projects from './Projects'
 import Contact from'./Contact'
-
+import Myexperience from'./Myexperience'
 
 
 const Port = () => {
@@ -22,7 +22,9 @@ const Port = () => {
       </section>
       <Technologies/>
       <section id="projects">
-      
+      </section>
+      <Myexperience/>
+      <section id="mye">
         
       <Projects/></section>
       <section id="experience">
