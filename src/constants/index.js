@@ -1,6 +1,6 @@
 
 
-export const HERO_CONTENT = `Motivated and skilled Software Engineering student pursuing a BSc (Hons) in Computing at NIBM, seeking a software engineering internship to gain practical experience. With a solid foundation in cloud technologies like AWS and Firebase, I am enthusiastic about contributing to innovative projects and developing hands-on skills in a collaborative team environment. `;
+export const HERO_CONTENT = ` Driven and skilled DevOps Engineer pursuing a BSc (Hons) in Computing at NIBM, with hands-on expertise in cloud infrastructure, automation, and CI/CD pipelines. I specialize in Kubernetes, Terraform, Ansible, Jenkins, AWS, Firebase, Docker, Grafana, and other cutting-edge DevOps tools. Passionate about automating workflows, optimizing deployments, and building scalable, resilient systems. Always eager to push the boundaries of cloud and DevOps innovation.  `;
 
 export const ABOUT_TEXT = `I'm an undergraduate software engineering student who enjoys breaking down complex problems into smaller parts and solving them effectively. I aim to leverage robust programming skills and continuous learning to contribute to software development, collaborate effectively with experienced engineers, and ensure team success in meeting project deadlines.`;
 
