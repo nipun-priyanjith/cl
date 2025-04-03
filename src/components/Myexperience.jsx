@@ -38,7 +38,8 @@ const Myexperience = () => {
 
               {/* Timeline Line - Properly Positioned */}
               {index !== experiences.length - 1 && (
-                <div className="absolute top-full w-1 h-[230px] bg-[#9CFF00]"></div>
+                <div className="absolute top-full w-px h-[238px] bg-[#9CFF00]"></div>
+
               )}
             </div>
 
