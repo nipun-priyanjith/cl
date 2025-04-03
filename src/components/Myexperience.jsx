@@ -7,6 +7,7 @@ const Myexperience = () => {
       title: "Sri Lanka Telecom - DevOps Engineer Intern",
       imageUrl: "https://shalankans.lk/content/uploads/photos/2019/03/shalanka_c3dde961362e9807c27f093218e0cac2.gif",
       details: ["Firewall handling", "CI/CD pipeline"],
+      highlight: true, // Latest experience
     },
     {
       date: "January 2023 - Present",
@@ -23,33 +24,52 @@ const Myexperience = () => {
   ];
 
   return (
-    <div className="p-8 bg-darkGray min-h-screen text-[#fffce1] font-mono">
-      <h1 className="text-4xl font-bold text-center mb-8">My Experience</h1>
-      <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+    <div className="p-8 bg-darkGray min-h-screen text-[#fffce1] font-mono flex flex-col items-center">
+      <h1 className="text-4xl font-bold text-center mb-10">My Experience</h1>
+      <div className="relative w-full max-w-3xl">
         {experiences.map((exp, index) => (
-          <div
-            key={index}
-            className="p-6 bg-[#1A1A1A] rounded-2xl shadow-lg transform hover:scale-105 transition duration-300"
-          >
-            <div className="flex items-center mb-4">
-              <img src={exp.imageUrl} alt={exp.title} className="w-20 h-20 rounded-full border-2 border-[#9CFF00] shadow-lg" />
-              <div className="ml-4">
-                <h2 className="text-2xl font-semibold text-[#9CFF00]">{exp.title}</h2>
-                <h3 className="text-lg font-medium text-[#40A4FF]">{exp.date}</h3>
-              </div>
+          <div key={index} className="relative flex items-start mb-10">
+            {/* Connector Line */}
+            {index !== experiences.length - 1 && (
+              <div className="absolute left-8 top-16 h-full w-1 bg-[#40A4FF]"></div>
+            )}
+
+            {/* Timeline Circle */}
+            <div className="w-16 h-16 flex items-center justify-center bg-[#40A4FF] rounded-full text-xl font-bold shadow-md relative z-10">
+              {index + 1}
             </div>
-            <ul className="list-none flex flex-col gap-2 mt-4">
-              {exp.details.map((detail, i) => (
-                <li key={i} className="text-[#fffce1] text-lg font-light flex items-center">
-                  <span className="text-[#9CFF00] mr-2">➤</span> {detail}
-                </li>
-              ))}
-            </ul>
+
+            {/* Experience Card */}
+            <div
+              className={`ml-8 p-6 bg-[#1A1A1A] rounded-2xl shadow-lg w-full transition duration-300 ${
+                exp.highlight ? "border-2 border-[#9CFF00] scale-105" : ""
+              }`}
+            >
+              <div className="flex items-center mb-4">
+                <img
+                  src={exp.imageUrl}
+                  alt={exp.title}
+                  className="w-20 h-20 rounded-full border-2 border-[#9CFF00] shadow-lg"
+                />
+                <div className="ml-4">
+                  <h2 className="text-2xl font-semibold text-[#9CFF00]">{exp.title}</h2>
+                  <h3 className="text-lg font-medium text-[#40A4FF]">{exp.date}</h3>
+                </div>
+              </div>
+              <ul className="list-none flex flex-col gap-2 mt-4">
+                {exp.details.map((detail, i) => (
+                  <li key={i} className="text-[#fffce1] text-lg font-light flex items-center">
+                    <span className="text-[#9CFF00] mr-2">➤</span> {detail}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         ))}
       </div>
     </div>
   );
 };
+
 
 export default Myexperience;
