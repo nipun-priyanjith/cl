@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaJava, FaPython, FaGitAlt, FaNodeJs, FaLinux, FaDocker } from 'react-icons/fa';
-import { SiFlutter, SiMongodb, SiMysql, SiKubernetes, SiTerraform, SiJenkins, SiGithubactions, SiGrafana, SiAnsible, SiPuppet, SiPrometheus, SiOpenshift } from 'react-icons/si';
+import { SiFlutter, SiMongodb, SiMysql, SiKubernetes, SiTerraform, SiJenkins, SiGithubactions, SiGrafana, SiAnsible, SiPuppet, SiPrometheus } from 'react-icons/si';
 import { RiReactjsLine, RiTailwindCssFill } from 'react-icons/ri';
 import { IoLogoFirebase } from 'react-icons/io5';
 import { motion } from 'framer-motion';
@@ -45,7 +45,6 @@ function Technologies() {
           { icon: SiAnsible, color: '#EE0000' },
           { icon: SiPuppet, color: '#FFAE1A' },
           { icon: SiPrometheus, color: '#E6522C' },
-          { icon: SiOpenshift, color: '#EE0000' },
           { icon: FaJava, color: '#f89820' },
           { icon: FaPython, color: '#3776AB' },
           { icon: RiReactjsLine, color: '#61DAFB' },
