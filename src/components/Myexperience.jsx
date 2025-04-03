@@ -39,11 +39,11 @@ const Myexperience = () => {
             key={index}
             className="mb-6 p-4 bg-darkGray rounded-lg shadow-md"
           >
-            <div className="flex items-center mb-4">
+            <div className="flex  mb-4">
               <img src={exp.imageUrl} alt={exp.title} className="w-16 h-16 rounded-full mr-4" />
               <div>
-                <h2 className="text-xl font-semibold text-[#40A4FF]">{exp.title}</h2>
-                <h3 className="text-lg font-medium text-[#9CFF00]">{exp.date}</h3>
+                <h2 className="text-xl font-semibold text-[#9CFF00]">{exp.title}</h2>
+                <h3 className="text-lg font-medium text-[#40A4FF]">{exp.date}</h3>
               </div>
             </div>
             <ul className="list-disc list-inside mt-2">
