@@ -32,13 +32,13 @@ const Myexperience = () => {
             {/* Timeline Circle and Line Container */}
             <div className="relative flex flex-col items-center">
               {/* Circle */}
-              <div className="w-9 h-9 flex items-center justify-center bg-[#9CFF00] rounded-full text-lg font-bold text-black shadow-md z-10">
+              <div className="w-7 h-7 flex items-center justify-center bg-[#9CFF00] rounded-full text-lg font-bold text-black shadow-md z-10">
                 {index + 1}
               </div>
 
               {/* Timeline Line - Properly Positioned */}
               {index !== experiences.length - 1 && (
-                <div className="absolute top-full w-px h-[238px] bg-[#9CFF00]"></div>
+                <div className="absolute top-full w-px h-[242px] bg-[#9CFF00]"></div>
 
               )}
             </div>
