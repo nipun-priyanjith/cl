@@ -1,6 +1,7 @@
 import React from "react";
 
-const Myexperience = () => {  const experiences = [
+const MyExperience = () => {
+  const experiences = [
     {
       date: "January 2025 - Present",
       title: "Sri Lanka Telecom - DevOps Engineer Intern",
@@ -28,13 +29,13 @@ const Myexperience = () => {  const experiences = [
       <div className="relative w-full max-w-3xl">
         {experiences.map((exp, index) => (
           <div key={index} className="relative flex items-start mb-10">
-            {/* Timeline Connector Line */}
+            {/* Slim Timeline Line */}
             {index !== experiences.length - 1 && (
-              <div className="absolute left-8 top-16 h-full w-1 bg-[#9CFF00]"></div>
+              <div className="absolute left-8 top-16 h-full w-0.5 bg-[#9CFF00]"></div>
             )}
 
             {/* Timeline Circle */}
-            <div className="w-12 h-12 flex items-center justify-center bg-[#9CFF00] rounded-full text-xl font-bold text-black shadow-md relative z-10">
+            <div className="w-14 h-14 flex items-center justify-center bg-[#40A4FF] rounded-full text-lg font-bold text-black shadow-md relative z-10">
               {index + 1}
             </div>
 
@@ -70,5 +71,4 @@ const Myexperience = () => {  const experiences = [
   );
 };
 
-
-export default Myexperience;
+export default MyExperience;
