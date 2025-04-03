@@ -37,7 +37,7 @@ const Myexperience = () => {
 
               {/* Timeline Line */}
               {index !== experiences.length - 1 && (
-                <div className="absolute top-full w-px h-[100px] sm:h-[200px] bg-[#9CFF00]"></div>
+                <div className="absolute top-full w-px h-[120px] sm:h-[300px] bg-[#9CFF00]"></div>
               )}
             </div>
 
