@@ -31,7 +31,7 @@ const Myexperience = () => {
           <div key={index} className="relative flex items-start mb-10">
             {/* Slim Timeline Line */}
             {index !== experiences.length - 1 && (
-              <div className="absolute left-8 top-16 h-full w-0.4 bg-[#9CFF00]"></div>
+              <div className="absolute left-8 top-16 h-full w-0.5 bg-[#9CFF00]"></div>
             )}
 
             {/* Timeline Circle */}
