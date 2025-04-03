@@ -38,7 +38,8 @@ function Projects() {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="my-20 text-center text-4xl font-mono text-white"
+        className="my-20 text-center text-4xl font-mono"
+        style={{ color: '#fffce1' }}
       >
         Projects
       </motion.h1>
@@ -59,14 +60,14 @@ function Projects() {
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <h6 className="mb-2 font-semibold font-mono text-2xl text-white">
+              <h6 className="mb-2 font-semibold font-mono text-2xl" style={{ color: '#fffce1' }}>
                 {project.title}
               </h6>
               <p className="mb-4 text-neutral-400 font-mono">{project.description}</p>
               {project.technologies ? project.technologies.split(',').map((tech, index) => (
                 <span 
                   key={index} 
-                  className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium font-mono text-green-400"
+                  className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium font-mono" style={{ color: '#9CFF00' }}
                 >
                   {tech.trim()}
                 </span>
@@ -76,7 +77,8 @@ function Projects() {
                 href={project.link} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="mt-4 inline-block font-mono text-sm font-semibold underline text-blue-400 transition-colors duration-300 hover:text-green-400"
+                className="mt-4 inline-block font-mono text-sm font-semibold underline text-blue-400 transition-colors duration-300" style={{ color: '#40A4FF' }} onMouseEnter={(e) => e.target.style.color = '#9CFF00'}
+                onMouseLeave={(e) => e.target.style.color = '#40A4FF'}
               >
                 View Source Code
               </a>
