@@ -34,7 +34,7 @@ const Myexperience = () => {  const experiences = [
             )}
 
             {/* Timeline Circle */}
-            <div className="w-16 h-16 flex items-center justify-center bg-[#40A4FF] rounded-full text-xl font-bold text-black shadow-md relative z-10">
+            <div className="w-12 h-12 flex items-center justify-center bg-[#9CFF00] rounded-full text-xl font-bold text-black shadow-md relative z-10">
               {index + 1}
             </div>
 
