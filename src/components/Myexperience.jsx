@@ -31,13 +31,13 @@ const Myexperience = () => {
           <div key={index} className="relative flex items-start mb-10 sm:mb-14">
             {/* Timeline Circle and Line */}
             <div className="relative flex flex-col items-center">
-              <div className="w-4 h-4 sm:w-4 sm:h-4 flex items-center justify-center bg-[#9CFF00] rounded-full text-base sm:text-lg font-bold text-black shadow-md z-10">
+              <div className="w-6 h-6 sm:w-6 sm:h-6 flex items-center justify-center bg-[#9CFF00] rounded-full text-base sm:text-lg font-bold text-black shadow-md z-10">
                 {index + 1}
               </div>
 
               {/* Timeline Line */}
               {index !== experiences.length - 1 && (
-                <div className="absolute top-full w-px h-[295px] sm:h-[260px] bg-[#9CFF00]"></div>
+                <div className="absolute top-full w-px h-[300px] sm:h-[260px] bg-[#9CFF00]"></div>
               )}
             </div>
 
