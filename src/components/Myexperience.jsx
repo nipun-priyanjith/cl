@@ -35,7 +35,7 @@ const Myexperience = () => {
             )}
 
             {/* Timeline Circle */}
-            <div className="w-16 h-16 flex items-center justify-center bg-[#40A4FF] rounded-full text-xl font-bold shadow-md relative z-10">
+            <div className="w-14 h-14 flex items-center justify-center bg-[#9CFF00] rounded-full text-xl font-bold shadow-md relative z-10">
               {index + 1}
             </div>
 
