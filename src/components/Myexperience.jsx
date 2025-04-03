@@ -1,6 +1,6 @@
 import React from "react";
 
-const MyExperience = () => {
+const Myexperience = () => {
   const experiences = [
     {
       date: "January 2025 - Present",
@@ -52,4 +52,4 @@ const MyExperience = () => {
   );
 };
 
-export default MyExperience;
+export default Myexperience;
