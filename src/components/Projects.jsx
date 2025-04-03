@@ -30,7 +30,7 @@ function Projects() {
     return <p className="text-center text-xl text-red-500">Error: {error}</p>;
   }
 
-  const visibleProjects = showAll ? projects : projects.slice(0, 3);
+  const visibleProjects = showAll ? projects : projects.slice(0, 2);
 
   return (
     <div className="border-b border-neutral-900 pb-4">
@@ -125,7 +125,7 @@ function ImageCarousel({ images }) {
       width={400}
       height={400}
       alt="Project"
-      className="mb-6 rounded border-2 border-green-400"
+      className="mb-6 rounded" style={{ borderColor: '#9CFF00', borderWidth: '2px', borderStyle: 'solid' }}
     />
   );
 }
