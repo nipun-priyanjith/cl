@@ -33,17 +33,19 @@ const Myexperience = () => {
   return (
     <div className="p-6 bg-darkGray min-h-screen text-[#fffce1] font-mono">
       <h1 className="text-3xl font-bold text-center mb-6">My Experience</h1>
-      <div className="relative max-w-3xl mx-auto">
+      <div className="max-w-3xl mx-auto">
         {experiences.map((exp, index) => (
           <div
             key={index}
-            className="mb-6 p-4 bg-darkGray rounded-lg shadow-md relative z-10"
+            className="mb-6 p-4 bg-darkGray rounded-lg shadow-md"
           >
-            <h2 className="text-xl font-semibold text-[#40A4FF]">{exp.date}</h2>
-            <h3 className="text-lg font-medium text-[#9CFF00] flex items-center">
-              <img src={exp.imageUrl} alt={exp.title} className="w-8 h-8 rounded-full mr-3" />
-              {exp.title}
-            </h3>
+            <div className="flex items-center mb-4">
+              <img src={exp.imageUrl} alt={exp.title} className="w-16 h-16 rounded-full mr-4" />
+              <div>
+                <h2 className="text-xl font-semibold text-[#40A4FF]">{exp.title}</h2>
+                <h3 className="text-lg font-medium text-[#9CFF00]">{exp.date}</h3>
+              </div>
+            </div>
             <ul className="list-disc list-inside mt-2">
               {exp.details.map((detail, i) => (
                 <li key={i} className="text-[#fffce1]">{detail}</li>
