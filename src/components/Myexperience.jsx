@@ -28,16 +28,17 @@ const Myexperience = () => {
       <h1 className="text-4xl font-bold text-center mb-10">My Experience</h1>
       <div className="relative w-full max-w-3xl">
         {experiences.map((exp, index) => (
-          <div key={index} className="relative flex items-start mb-10">
-            {/* Timeline Circle */}
+          <div key={index} className="relative flex items-start mb-14">
+            {/* Timeline Circle and Line Container */}
             <div className="relative flex flex-col items-center">
+              {/* Circle */}
               <div className="w-9 h-9 flex items-center justify-center bg-[#9CFF00] rounded-full text-lg font-bold text-black shadow-md z-10">
                 {index + 1}
               </div>
 
-              {/* Slim Timeline Line - Positioned Correctly */}
+              {/* Timeline Line - Properly Positioned */}
               {index !== experiences.length - 1 && (
-                <div className="absolute top-9 left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-[#9CFF00]"></div>
+                <div className="absolute top-full w-1 h-[80px] bg-[#9CFF00]"></div>
               )}
             </div>
 
