@@ -3,7 +3,7 @@ import React from "react";
 const Myexperience = () => {
   const experiences = [
     {
-      date: "January 2025 - September 2025",
+      date: "January 2025 - Present",
       title: "Sri Lanka Telecom - DevOps Engineer Intern",
       imageUrl: "https://shalankans.lk/content/uploads/photos/2019/03/shalanka_c3dde961362e9807c27f093218e0cac2.gif", // Image URL here
       details: [
@@ -46,7 +46,7 @@ const Myexperience = () => {
                 <h3 className="text-lg font-medium text-[#40A4FF]">{exp.date}</h3>
               </div>
             </div>
-            <ul className="list-disc items-center list-inside mt-2">
+             <ul className="list-disc list-inside flex flex-col items-center text-center mt-2">
               {exp.details.map((detail, i) => (
                 <li key={i} className="text-[#fffce1]">{detail}</li>
               ))}
