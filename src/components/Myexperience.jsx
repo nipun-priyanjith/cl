@@ -6,18 +6,18 @@ const Myexperience = () => {
       date: "January 2025 - Present",
       title: "Sri Lanka Telecom - DevOps Engineer Intern",
       imageUrl: "https://shalankans.lk/content/uploads/photos/2019/03/shalanka_c3dde961362e9807c27f093218e0cac2.gif",
-      details: ["Firewall handling", "CI/CD pipeline"],
+      details: ["firewall handling", "ci/cd pipeline"],
       highlight: true,
     },
     {
       date: "January 2023 - Present",
-      title: "Self Projects",
+      title: "Self projects",
       imageUrl: "https://th.bing.com/th/id/OIP.9ZO7S-C-KRpCXxgWYIJjRwHaHa?rs=1&pid=ImgDetMain",
-      details: ["My portfolio project", "e-commerce website with ML , CI/CD and k8s."],
+      details: ["my portfolio project", "e-commerce website with ml, ci/cd and k8s."],
     },
     {
       date: "October 2022 - Present",
-      title: "NIBM Academic Project",
+      title: "NIBM academic project",
       imageUrl: "https://findit-resources.s3.us-east-2.amazonaws.com/account/profilePictures/1628842127359.jpg",
       details: [],
     },
@@ -25,13 +25,13 @@ const Myexperience = () => {
 
   return (
     <div className="p-6 sm:p-8 bg-darkGray min-h-screen text-[#fffce1] font-mono flex flex-col items-center">
-      <h1 className="text-3xl sm:text-4xl font-bold text-center mb-10">My Experience</h1>
+      <h1 className="text-2xl sm:text-3xl font-bold text-center mb-10">my experience</h1>
       <div className="relative w-full max-w-3xl">
         {experiences.map((exp, index) => (
           <div key={index} className="relative flex items-start mb-10 sm:mb-14">
             {/* Timeline Circle and Line */}
             <div className="relative flex flex-col items-center">
-              <div className="w-6 h-6 sm:w-6 sm:h-6 flex items-center justify-center bg-[#9CFF00] rounded-full text-base sm:text-lg font-bold text-black shadow-md z-10">
+              <div className="w-6 h-6 sm:w-6 sm:h-6 flex items-center justify-center bg-[#9CFF00] rounded-full text-sm sm:text-base font-bold text-black shadow-md z-10">
                 {index + 1}
               </div>
 
@@ -51,17 +51,17 @@ const Myexperience = () => {
                 <img
                   src={exp.imageUrl}
                   alt={exp.title}
-                  className="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-[#9CFF00] shadow-md"
+                  className="w-14 h-14 sm:w-18 sm:h-18 rounded-full border-2 border-[#9CFF00] shadow-md"
                 />
                 <div className="ml-3 sm:ml-4">
-                  <h2 className="text-xl sm:text-2xl font-semibold text-[#9CFF00]">{exp.title}</h2>
-                  <h3 className="text-md sm:text-lg font-medium text-[#40A4FF]">{exp.date}</h3>
+                  <h2 className="text-lg sm:text-xl font-semibold text-[#9CFF00]">{exp.title.toLowerCase()}</h2>
+                  <h3 className="text-sm sm:text-md font-medium text-[#40A4FF]">{exp.date.toLowerCase()}</h3>
                 </div>
               </div>
               <ul className="list-none flex flex-col gap-1 sm:gap-2 mt-3 sm:mt-4">
                 {exp.details.map((detail, i) => (
-                  <li key={i} className="text-[#fffce1] text-md sm:text-lg font-light flex items-center">
-                    <span className="text-[#9CFF00] mr-2">➤</span> {detail}
+                  <li key={i} className="text-[#fffce1] text-sm sm:text-md font-light flex items-center">
+                    <span className="text-[#9CFF00] mr-2">➤</span> {detail.toLowerCase()}
                   </li>
                 ))}
               </ul>
