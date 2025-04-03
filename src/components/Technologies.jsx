@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaJava, FaPython, FaGitAlt, FaNodeJs, FaLinux } from 'react-icons/fa';
-import { SiFlutter, SiMongodb, SiMysql, SiKubernetes, SiTerraform, SiJenkins, SiGithubactions } from 'react-icons/si';
+import { FaJava, FaPython, FaGitAlt, FaNodeJs, FaLinux, FaDocker } from 'react-icons/fa';
+import { SiFlutter, SiMongodb, SiMysql, SiKubernetes, SiTerraform, SiJenkins, SiGithubactions, SiGrafana, SiAnsible, SiPuppet, SiPrometheus, SiOpenshift } from 'react-icons/si';
 import { RiReactjsLine, RiTailwindCssFill } from 'react-icons/ri';
 import { IoLogoFirebase } from 'react-icons/io5';
 import { motion } from 'framer-motion';
