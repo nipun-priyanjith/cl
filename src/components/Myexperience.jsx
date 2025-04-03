@@ -13,13 +13,12 @@ const Myexperience = () => {
       date: "January 2023 - Present",
       title: "Self Projects",
       imageUrl: "https://th.bing.com/th/id/OIP.9ZO7S-C-KRpCXxgWYIJjRwHaHa?rs=1&pid=ImgDetMain",
-      details: ["My portfolio project", "School management system"],
+      details: ["My portfolio project", "e-commerce website with ML , CI/CD and k8s."],
     },
     {
       date: "October 2022 - Present",
       title: "NIBM Academic Project",
-      imageUrl: "https://findit-resources.s3.us-east-2.amazonaws.com/account/profilePictures/1628842127359.jpg",
-      details: ["ML project"],
+      imageUrl: "https://findit-resources.s3.us-east-2.amazonaws.com/account/profilePictures/1628842127359.jpg",      
     },
   ];
 
