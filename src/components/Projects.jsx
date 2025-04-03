@@ -90,7 +90,7 @@ function Projects() {
             onClick={() => setShowAll(!showAll)} 
             className="px-4 py-2 bg-neutral-800 text-white rounded-lg hover:bg-neutral-700 transition"
           >
-            {showAll ? 'Show Less' : 'Show More'}
+            {showAll ? 'Show Less' : 'Show More Projects'}
           </button>
         </div>
       )}
