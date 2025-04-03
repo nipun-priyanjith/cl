@@ -32,14 +32,14 @@ const Myexperience = () => {
 
   return (
     <div className="p-6 bg-darkGray min-h-screen text-[#fffce1] font-mono">
-      <h1 className="text-3xl font-bold text-center mb-6">My Experience</h1>
+      <h1 className="text-3xl font-bold mb-6">My Experience</h1>
       <div className="max-w-3xl mx-auto">
         {experiences.map((exp, index) => (
           <div
             key={index}
             className="mb-6 p-4 bg-darkGray rounded-lg shadow-md"
           >
-            <div className="flex  mb-4">
+            <div className="flex mb-4">
               <img src={exp.imageUrl} alt={exp.title} className="w-16 h-16 rounded-full mr-4" />
               <div>
                 <h2 className="text-xl font-semibold text-[#9CFF00]">{exp.title}</h2>
