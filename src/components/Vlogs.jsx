@@ -70,7 +70,7 @@ export default function Vlogs() {
             Show More Articles
           </button>
         )}
-        {visibleArticles > 3 && (
+        {visibleArticles > 2 && (
           <button
             onClick={() => setVisibleArticles(3)}
             className="px-6 py-2 font-mono bg-darkGray text-[#9CFF00] border-2 border-[#9CFF00] rounded-lg hover:text-[#40A4FF] hover:border-[#40A4FF] transition"
