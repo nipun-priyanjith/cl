@@ -38,7 +38,7 @@ export default function Vlogs() {
             href={article.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center gap-4 bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-lg transition"
+            className="flex flex-col items-center gap-4 bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-lg transition border-2 border-transparent hover:border-[#9CFF00]"
           >
             <img src={article.image} alt={article.title} className="w-full h-32 object-cover rounded-lg" />
             {article.icon}
