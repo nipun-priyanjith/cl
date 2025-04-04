@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { FaReddit, FaMedium, FaLinkedin } from "react-icons/fa";
 
 const articles = [
@@ -24,16 +23,15 @@ const articles = [
 
 export default function Vlogs() {
   return (
-    <div className="min-h-screen bg-gray-900 p-6 flex flex-col items-center">
-      <h1 className="text-4xl font-mono text-[#40A4FF] mb-8">My Published Articles</h1>
-      <div className="w-full max-w-2xl space-y-6">
+    <div className="p-6 flex flex-col items-center">
+      <h1 className="text-4xl font-mono text-[#fffce1] mb-8">My Published Articles</h1>
+      <div className="w-full max-w-2xl grid grid-cols-2 gap-6">
         {articles.map((article, index) => (
-          <motion.a
+          <a
             key={index}
             href={article.link}
             target="_blank"
             rel="noopener noreferrer"
-            whileHover={{ scale: 1.05 }}
             className="flex items-center gap-4 bg-gray-800 p-4 rounded-2xl shadow-md hover:shadow-lg transition"
           >
             {article.icon}
@@ -41,7 +39,7 @@ export default function Vlogs() {
               <h2 className="text-lg font-mono text-[#9CFF00]">{article.title}</h2>
               <p className="text-sm font-mono text-gray-400">Published on {article.platform}</p>
             </div>
-          </motion.a>
+          </a>
         ))}
       </div>
     </div>
