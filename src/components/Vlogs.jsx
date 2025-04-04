@@ -36,13 +36,18 @@ const allArticles = [
   //   image: "https://th.bing.com/th/id/OIP.KOgu6qiko5ct4HlbVXr3HAHaD9?rs=1&pid=ImgDetMain"
   // }
 ];
+
 export default function Vlogs() {
   const [visibleArticles, setVisibleArticles] = useState(2);
 
   return (
     <div className="p-6 flex flex-col items-center">
-      <h1 className="text-4xl font-mono text-[#fffce1] mb-8">Published Articles</h1>
-      <div className="w-full max-w-3xl grid grid-cols-2 gap-6">
+      <h1 className="text-4xl font-mono text-[#fffce1] mb-8 text-center">
+        Published Articles
+      </h1>
+
+      {/* Responsive Grid */}
+      <div className="w-full max-w-5xl grid grid-cols-1 sm:grid-cols-2 gap-6">
         {allArticles.slice(0, visibleArticles).map((article, index) => (
           <a
             key={index}
@@ -51,17 +56,29 @@ export default function Vlogs() {
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-4 bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-lg transition border-2 border-transparent hover:border-[#9CFF00]"
           >
-            <img src={article.image} alt={article.title} className="w-full h-32 object-cover rounded-lg" />
+            <img
+              src={article.image}
+              alt={article.title}
+              className="w-full h-40 sm:h-48 object-cover rounded-lg"
+            />
             {article.icon}
             <div className="text-center">
-              <h2 className="text-lg font-mono text-[#9CFF00]">{article.title}</h2>
-              <p className="text-sm font-mono text-gray-400">Published on {article.platform}</p>
-              <p className="text-sm font-mono text-gray-300 mt-2">{article.description}</p>
+              <h2 className="text-lg font-mono text-[#9CFF00]">
+                {article.title}
+              </h2>
+              <p className="text-sm font-mono text-gray-400">
+                Published on {article.platform}
+              </p>
+              <p className="text-sm font-mono text-gray-300 mt-2">
+                {article.description}
+              </p>
             </div>
           </a>
         ))}
       </div>
-      <div className="mt-6 flex gap-4">
+
+      {/* Show More / Show Less Buttons */}
+      <div className="mt-6 flex flex-wrap gap-4 justify-center">
         {visibleArticles < allArticles.length && (
           <button
             onClick={() => setVisibleArticles(allArticles.length)}
@@ -82,4 +99,3 @@ export default function Vlogs() {
     </div>
   );
 }
-
