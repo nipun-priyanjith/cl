@@ -27,12 +27,16 @@ const Port = () => {
       <section id="mye">        
       <Projects/></section>
         
-      <section id="vl">  
-       <Vlogs/>
-      </section>
+
         
       <section id="experience">
       <Experience/></section>
+
+      <section id="vl">  
+       <Vlogs/>
+      </section>
+
+        
       <section id="contact">
       <Contact/></section>
     </div></div>
