@@ -43,7 +43,7 @@ const Myexperience = () => {
 
             {/* Experience Card */}
             <div
-              className={`ml-6 sm:ml-8 p-4 sm:p-6 bg-[#1A1A1A] rounded-xl sm:rounded-2xl shadow-md w-full transition duration-300 ${
+              className={`ml-6 sm:ml-8 p-4 sm:p-6 bg-gray-800 rounded-xl sm:rounded-2xl shadow-md w-full transition duration-300 ${
                 exp.highlight ? "border-2 border-[#40A4FF] sm:scale-105" : ""
               }`}
             >
