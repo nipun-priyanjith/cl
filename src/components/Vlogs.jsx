@@ -25,7 +25,7 @@ const allArticles = [
     link: "https://www.linkedin.com/posts/nipun-priyanjith-06a84a28a_softwareengineering-bugfixing-testing-activity-7197413037710925824-lvBg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEY_h9IBsDslZGPQdf-tmbzVkqzkF2waPXg",
     icon: <FaLinkedin className="text-[#0077B5] text-3xl" />, 
     description: "As software engineers, we often find ourselves most excited about building new features, designing innovative systems, and writing elegant code. However, two critical aspects of our work sometimes don’t get the attention they deserve: bug fixing and testing.",
-    image: "rrc.jpeg"
+    image: "https://raw.githubusercontent.com/nipun-priyanjith/cl/master/src/components/rrc.jpeg"
   }
   // {
   //   title: "The Importance of Code Reviews in Software Development",
