@@ -44,8 +44,7 @@ const Navbar = () => {
       initial={{ y: 0 }}
       animate={{ y: showNavbar ? 0 : -100 }}
       transition={{ duration: 0.3 }}
-      className="fixed w-full top-0 left-0 z-50 p-5 bg-black bg-opacity-80 backdrop-blur-md text-white border-b border-neutral-900 shadow-md"
-    >
+      className="fixed w-full top-0 left-0 z-50 p-5 bg-neutral-800 text-white border-b border-neutral-900 shadow-md">
       <div className="flex items-center justify-between">
         {/* Mobile Toggle */}
         <div className="lg:hidden">
