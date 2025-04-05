@@ -1,4 +1,4 @@
-import { FaReddit, FaLinkedin } from "react-icons/fa";
+import { FaReddit, FaLinkedin ,FaMedium} from "react-icons/fa";
 //import { FaMedium } from "react-icons/fa";
 import { useState } from "react";
 
