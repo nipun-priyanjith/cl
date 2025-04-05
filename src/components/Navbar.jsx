@@ -7,7 +7,7 @@ const navLinks = [
   { name: 'experience', href: '#mye' },
   { name: 'Projects', href: '#projects' },
   { name: 'MyYouTube', href: '#experience' },
-   { name: 'Articles', href: '#vl' }
+   { name: 'Articles', href: '#vl' },
   { name: 'Contact', href: '#contact' }
 ];
 
