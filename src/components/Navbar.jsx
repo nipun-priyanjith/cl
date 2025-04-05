@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
@@ -18,16 +18,17 @@ const Navbar = () => {
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
-  const controlNavbar = () => {
+  // ✅ useCallback here to avoid ESLint warning
+  const controlNavbar = useCallback(() => {
     if (typeof window !== 'undefined') {
       if (window.scrollY > lastScrollY) {
-        setShowNavbar(false); // hide on scroll down
+        setShowNavbar(false); // hide when scrolling down
       } else {
-        setShowNavbar(true); // show on scroll up
+        setShowNavbar(true); // show when scrolling up
       }
       setLastScrollY(window.scrollY);
     }
-  };
+  }, [lastScrollY]);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -36,7 +37,7 @@ const Navbar = () => {
         window.removeEventListener('scroll', controlNavbar);
       };
     }
-  }, [lastScrollY]);
+  }, [controlNavbar]); // ✅ dependency fixed
 
   return (
     <motion.nav
@@ -46,7 +47,7 @@ const Navbar = () => {
       className="fixed w-full top-0 left-0 z-50 p-5 bg-black bg-opacity-80 backdrop-blur-md text-white border-b border-neutral-900 shadow-md"
     >
       <div className="flex items-center justify-between">
-        {/* Mobile Menu Button */}
+        {/* Mobile Toggle */}
         <div className="lg:hidden">
           <button onClick={toggleMenu} aria-label="Toggle Menu">
             {menuOpen ? (
@@ -57,7 +58,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Links for large screens */}
+        {/* Desktop Links */}
         <div className="hidden lg:flex space-x-6 ml-auto">
           {navLinks.map((link, index) => (
             <motion.a
@@ -73,7 +74,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Dropdown */}
+      {/* Mobile Menu */}
       {menuOpen && (
         <div className="lg:hidden mt-4 flex flex-col space-y-4">
           {navLinks.map((link, index) => (
