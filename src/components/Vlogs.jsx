@@ -17,7 +17,7 @@ const allArticles = [
     link: "https://www.reddit.com/r/learnpython/comments/1cki40i/did_you_know_exploring_pythons_lesserknown/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button",
     icon: <FaReddit className="text-[#FF4500] text-3xl" />, 
     description: "Python is full of surprises! While you might be familiar with its popular libraries and syntax, there are some lesser-known features that can make your coding journey even more delightful. Here are a couple of Python facts you might not know (maybe you know 🌼):",
-    image: "https://cdn.imgbin.com/5/6/10/imgbin-professional-python-programmer-computer-programming-android-android-6vArCP1Sc81VFnVqY0QZfWzN8.jpg"
+    image: "https://pluspng.com/img-png/python-logo-png-open-2000.png"
   },
   // {https://res.cloudinary.com/teepublic/image/private/s--lwodOF8N--/t_Preview/b_rgb:191919,c_lpad,f_jpg,h_630,q_90,w_1200/v1597850228/production/designs/13217786_0.jpg
   //   title: "Building a Malware Detection System in Python",
