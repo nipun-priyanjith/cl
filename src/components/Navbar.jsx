@@ -4,8 +4,10 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'; // Heroicons for the
 
 const navLinks = [
   { name: 'AboutMe', href: '#about' },
+  { name: 'experience', href: '#mye' },
   { name: 'Projects', href: '#projects' },
   { name: 'MyYouTube', href: '#experience' },
+   { name: 'Articles', href: '#vl' }
   { name: 'Contact', href: '#contact' }
 ];
 
