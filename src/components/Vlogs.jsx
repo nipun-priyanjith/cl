@@ -3,6 +3,14 @@ import { FaReddit, FaLinkedin } from "react-icons/fa";
 import { useState } from "react";
 
 const allArticles = [
+       {
+       title: "How to Set Up a Kubernetes Cluster at Home Using Rocky Linux 9.5 (Step-by-Step)",
+       platform: "Medium",
+       link: "https://medium.com/@robocop.coolmax/how-to-set-up-a-kubernetes-cluster-at-home-using-rocky-linux-9-5-step-by-step-e15160d4e6dc",
+       icon: <FaMedium className="text-[#000000] text-3xl" />, 
+       description: "Kubernetes is a powerful container orchestration system, and setting it up on a home lab is a great way to learn. In this guide, we’ll show you how to install a two-node Kubernetes cluster (1 master, 1 worker) using Rocky Linux 9.5, a RHEL-compatible distribution ideal for stability and performance.",
+       image: "https://download.logo.wine/logo/Kubernetes/Kubernetes-Logo.wine.png"
+     },
   {
     title: "🐍 Did You Know? Exploring Python's Lesser-Known Features 🐍",
     platform: "Reddit",
@@ -27,14 +35,7 @@ const allArticles = [
     description: "As software engineers, we often find ourselves most excited about building new features, designing innovative systems, and writing elegant code. However, two critical aspects of our work sometimes don’t get the attention they deserve: bug fixing and testing.",
     image: "https://raw.githubusercontent.com/nipun-priyanjith/cl/master/src/components/rrc.jpeg"
   }
-  // {
-  //   title: "The Importance of Code Reviews in Software Development",
-  //   platform: "Medium",
-  //   link: "https://medium.com/@yourusername/code-reviews...",
-  //   icon: <FaMedium className="text-[#000000] text-3xl" />, 
-  //   description: "Why code reviews are crucial for maintaining code quality and team collaboration.",
-  //   image: "https://th.bing.com/th/id/OIP.KOgu6qiko5ct4HlbVXr3HAHaD9?rs=1&pid=ImgDetMain"
-  // }
+
 ];
 
 export default function Vlogs() {
