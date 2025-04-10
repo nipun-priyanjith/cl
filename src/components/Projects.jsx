@@ -30,7 +30,9 @@ function Projects() {
     return <p className="text-center text-xl text-red-500">Error: {error}</p>;
   }
 
-  const visibleProjects = showAll ? projects : projects.slice(0, 2);
+  // Reverse the projects array
+  const reversedProjects = [...projects].reverse();
+  const visibleProjects = showAll ? reversedProjects : reversedProjects.slice(0, 2);
 
   return (
     <div className="border-b border-neutral-900 pb-4">
@@ -77,7 +79,9 @@ function Projects() {
                 href={project.link} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="mt-4 inline-block font-mono text-sm font-semibold underline text-blue-400 transition-colors duration-300" style={{ color: '#40A4FF' }} onMouseEnter={(e) => e.target.style.color = '#9CFF00'}
+                className="mt-4 inline-block font-mono text-sm font-semibold underline text-blue-400 transition-colors duration-300" 
+                style={{ color: '#40A4FF' }}
+                onMouseEnter={(e) => e.target.style.color = '#9CFF00'}
                 onMouseLeave={(e) => e.target.style.color = '#40A4FF'}
               >
                 View Source Code
@@ -124,7 +128,8 @@ function ImageCarousel({ images }) {
       width={400}
       height={400}
       alt="Project"
-      className="mb-6 rounded" style={{ borderColor: '#9CFF00', borderWidth: '2px', borderStyle: 'solid' }}
+      className="mb-6 rounded" 
+      style={{ borderColor: '#9CFF00', borderWidth: '2px', borderStyle: 'solid' }}
     />
   );
 }
