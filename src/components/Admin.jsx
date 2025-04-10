@@ -7,7 +7,7 @@ import React from 'react';
 
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import Port from './Port';
+
 
 const Admin = () => {
 
@@ -64,7 +64,7 @@ const Admin = () => {
         <h2 className="text-3xl font-bold text-gray-800 mb-6">Admin Panel</h2>
 
 
-        <Port/>
+        
       </div>
     </div>
   );
